@@ -72,7 +72,7 @@ public final class ModPlugin extends BaseModPlugin {
     static public int modMenuKey, gameMenuKey;
     
     protected void loadSettings() throws Exception {
-        JSONObject settings = Global.getSettings().loadJSON("settings.json");
+        JSONObject settings = Global.getSettings().loadJSON("data/config/settings.json");
         modMenuKey = settings.optInt("modMenuKey", Keyboard.KEY_F12);
         gameMenuKey = settings.optInt("gameMenuKey", Keyboard.KEY_F10);
     }

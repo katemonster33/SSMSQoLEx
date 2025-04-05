@@ -42,7 +42,7 @@ public class UIUtil {
     static protected volatile UIUtil instance;
     protected WeakReference<Focusable> focusedObject;
     protected WeakReference<StandardTooltipV2Expandable> tooltipComponent;
-    protected Map<String,LabelRendererWrapper> labelRenderers;
+    protected Map<String, LabelRendererWrapper> labelRenderers;
     
     protected UIUtil() {
         labelRenderers = new HashMap<>();
@@ -242,14 +242,14 @@ public class UIUtil {
         GL11.glEnd();
     }
     
-    public void renderScrollbar(UIContext context, float scrollPos, float x, float y, float viewHeight, float contentHeight, boolean mouseOver) {
+    public void renderScrollbar(ssms.qol.ui.UIContext context, float scrollPos, float x, float y, float viewHeight, float contentHeight, boolean mouseOver) {
         GL11.glDisable(GL11.GL_TEXTURE_2D);
         GL11.glEnable(GL11.GL_BLEND);
         GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
         GL11.glLineWidth(1f);
         
         float[] color = context.<float[]>getStyle(UIContext.StyleProperty.scrollbarBackgroundColor);
-        int scbw = context.<Integer>getStyle(UIContext.StyleProperty.scrollbarWidth);
+        int scbw = context.<Integer>getStyle(ssms.qol.ui.UIContext.StyleProperty.scrollbarWidth);
         GL11.glColor3f(color[0],color[1],color[2]);
         GL11.glBegin(GL11.GL_LINES);
         GL11.glVertex2f(x + scbw / 2f, y);
@@ -273,7 +273,7 @@ public class UIUtil {
         GL11.glEnd();
     }
     
-    public void renderTextButton(UIContext context, String text, float x, float y, float w, float h) {
+    public void renderTextButton(ssms.qol.ui.UIContext context, String text, float x, float y, float w, float h) {
         float xMin = x, xMax = x + w, yMin = y, yMax = y + h;
         
         GL11.glDisable(GL11.GL_TEXTURE_2D);

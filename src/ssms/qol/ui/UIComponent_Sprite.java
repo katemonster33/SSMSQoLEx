@@ -17,33 +17,35 @@
  */
 package ssms.qol.ui;
 
-import com.fs.graphics.Sprite;
 import java.awt.Color;
+
+import com.fs.graphics.Sprite;
+import com.fs.starfarer.api.Global;
+import com.fs.starfarer.api.graphics.SpriteAPI;
 import org.lwjgl.opengl.GL11;
-import ssms.qol.UtilObfuscation;
 
 /**
  *
  * @author Malte Schulze
  */
 public class UIComponent_Sprite extends UIComponent_Base {
-    protected Sprite sprite;
+    protected SpriteAPI sprite;
     protected boolean useCornerColors = false, centered = true, stretch = false, autosize = false, autosizeDirty = false;
     protected float tw = -1f, th = -1f;
 
     public UIComponent_Sprite(String icon, boolean centered, boolean stretch) {
-        sprite = new Sprite(icon);
+        sprite = Global.getSettings().getSprite(icon);
         sprite.setBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
         this.centered = centered;
         this.stretch = stretch;
     }
     
-    public Sprite getSprite() {
+    public SpriteAPI getSprite() {
         return sprite;
     }
 
     public UIComponent_Sprite setIcon(String icon) {
-        sprite.setTexture(UtilObfuscation.GetTexture(icon));
+        sprite = Global.getSettings().getSprite(icon);
         return this;
     }
     
@@ -69,10 +71,10 @@ public class UIComponent_Sprite extends UIComponent_Base {
     }
     
     public UIComponent_Sprite setCornerColor(Color lowerLeft, Color upperLeft, Color upperRight, Color lowerRight) {
-        sprite.setColorLL(lowerLeft);
-        sprite.setColorUL(upperLeft);
-        sprite.setColorLR(lowerRight);
-        sprite.setColorUR(upperRight);
+        ((Sprite)sprite).setColorLL(lowerLeft);
+        ((Sprite)sprite).setColorUL(upperLeft);
+        ((Sprite)sprite).setColorLR(lowerRight);
+        ((Sprite)sprite).setColorUR(upperRight);
         useCornerColors = true;
         return this;
     }
@@ -123,7 +125,7 @@ public class UIComponent_Sprite extends UIComponent_Base {
         sprite.setHeight(h);
         if ( !useCornerColors )
             sprite.render(x, y);
-        else sprite.renderAtCenterWithCornerColors(x + w * 0.5f, y + h * 0.5f);
+        else ((Sprite)sprite).renderAtCenterWithCornerColors(x + w * 0.5f, y + h * 0.5f);
         
         popStyles();
     }

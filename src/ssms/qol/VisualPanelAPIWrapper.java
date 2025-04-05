@@ -223,6 +223,11 @@ public class VisualPanelAPIWrapper implements VisualPanelAPI {
     }
 
     @Override
+    public void hideRankNamePost() {
+        originalAPI.hideRankNamePost();
+    }
+
+    @Override
     public void showPersonInfo(PersonAPI person, boolean minimalMode, boolean withRelBar) {
         originalAPI.showPersonInfo(person, minimalMode, withRelBar);
     }

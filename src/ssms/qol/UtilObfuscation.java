@@ -17,7 +17,7 @@
  */
 package ssms.qol;
 
-import com.fs.graphics.D;
+//import com.fs.graphics.D;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.input.InputEventAPI;
 import com.fs.starfarer.api.ui.Alignment;
@@ -37,50 +37,50 @@ import ssms.qol.ui.UIUtil;
  */
 public class UtilObfuscation {
 
-    public static com.fs.graphics.Object GetTexture(String icon) {
-        return com.fs.graphics.G.o00000().get(icon);
-    }
-    
-    protected static Method mProcessInput = null;
-    protected static Class cEventCollection = null;
-    
-    public static boolean InitProcessInput() {
-        if ( mProcessInput == null ) {
-            try {
-                cEventCollection = Class.forName("com.fs.starfarer.util.super.OoOO");
-                mProcessInput = StandardTooltipV2Expandable.class.getMethod("processInput", cEventCollection);
-            } catch (ClassNotFoundException | NoSuchMethodException | SecurityException ex) {
-                Global.getLogger(ModPlugin.class).log(Level.ERROR, "Error reflecting types for processing input on tooltips!", ex);
-            }
-        }
-        return true;
-    }
-
-    static void ProcessInput(StandardTooltipV2Expandable tooltip, List<InputEventAPI> events) {
-        if ( !InitProcessInput() ) return;
-        try {
-            List<Object> collection = (List<Object>) cEventCollection.newInstance();
-            for ( InputEventAPI ev : events ) {
-                collection.add(ev);
-            }
-            mProcessInput.invoke(tooltip, collection);
-        } catch (InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
-            Global.getLogger(ModPlugin.class).log(Level.ERROR, "Error creating new event collection for processing on tooltip!", ex);
-        }
-    }
-    
+//    public static com.fs.graphics.Object GetTexture(String icon) {
+//        return com.fs.graphics.G.o00000().get(icon);
+//    }
+//
+//    protected static Method mProcessInput = null;
+//    protected static Class cEventCollection = null;
+//
+//    public static boolean InitProcessInput() {
+//        if ( mProcessInput == null ) {
+//            try {
+//                cEventCollection = Class.forName("com.fs.starfarer.util.super.OoOO");
+//                mProcessInput = StandardTooltipV2Expandable.class.getMethod("processInput", cEventCollection);
+//            } catch (ClassNotFoundException | NoSuchMethodException | SecurityException ex) {
+//                Global.getLogger(ModPlugin.class).log(Level.ERROR, "Error reflecting types for processing input on tooltips!", ex);
+//            }
+//        }
+//        return true;
+//    }
+//
+//    static void ProcessInput(StandardTooltipV2Expandable tooltip, List<InputEventAPI> events) {
+//        if ( !InitProcessInput() ) return;
+//        try {
+//            List<Object> collection = (List<Object>) cEventCollection.newInstance();
+//            for ( InputEventAPI ev : events ) {
+//                collection.add(ev);
+//            }
+//            mProcessInput.invoke(tooltip, collection);
+//        } catch (InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException ex) {
+//            Global.getLogger(ModPlugin.class).log(Level.ERROR, "Error creating new event collection for processing on tooltip!", ex);
+//        }
+//    }
+//
     static public class LabelRendererWrapper {
         static protected Method mSetColor, mGetColor, mSetShadow, mGetWidth, mGetHeight, mSetOutline, mSetText;
         static protected Method mRenderRightAbove, mRenderCenterAbove, mRenderRightCenter, mRenderLeftCenter,
                 mRenderCenterCenter, mRenderCenterBelow, mRenderLeftAbove, mRenderLeftBelow, mRenderRightBelow;
-        static protected Constructor conStringString;
+        static protected Constructor<?> conStringString;
         static boolean initialized = false;
         protected Object original;
 
         public LabelRendererWrapper(String s, String font) {
             if ( !initialized ) {
                 try {
-                    Class c = UIUtil.class.getClassLoader().loadClass("com.fs.graphics.super.C");
+                    Class<?> c = UIUtil.class.getClassLoader().loadClass("com.fs.graphics.super.C");
                     conStringString = c.getConstructor(String.class,String.class);
                     for ( Method m : c.getMethods() ) {
                         if ( m.getName().equals("\u00F4O0000") && m.getParameterTypes().length == 0 ) mGetColor = m;

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SSMSQoLEx:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="63bb2b04-433e-49e9-8efd-aad06df0f95a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jars/SSMSQoL.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mod_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/mod_info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/CampaignPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/CustomUIPanelPlugin_PropertiesContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/CustomUIPanelPlugin_PropertiesContainerTransient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/EveryFrameCombatPlugin_PostOnApplicationLoadPhase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/EveryFrameCombatPlugin_UnlimitedCommandPoints.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/FleetEventListenerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/InteractionDialogAPIWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/InteractionDialogPlugin_ApplicationSettings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/InteractionDialogPlugin_GameSettings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/InteractionDialog_TextPanelLogHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ModPlugin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/UtilObfuscation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ssms/qol/UtilObfuscation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/VisualPanelAPIWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/events/GlobalEvents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/events/InitUIContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/events/InteractionDialogDismissed.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/events/SSEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/events/SSEventCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/events/SSEventPhases.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/events/ShowLoot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertiesContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertiesContainerConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertiesContainerConfigurationFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertiesContainerMerger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertiesContainerValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertiesContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyConfigurationBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyConfigurationBaseContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyConfigurationBoolean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyConfigurationContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyConfigurationFloat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyConfigurationInteger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyConfigurationList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyConfigurationListContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyConfigurationListPrimitive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyConfigurationListSelectable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyConfigurationSelectable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyConfigurationString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyField.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyFieldBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyFieldBoolean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyFieldContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyFieldFloat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyFieldInteger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyFieldList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyFieldString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyValueGetter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/properties/PropertyValueSetter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/rule/CargoPodsWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/rule/DropSurplus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/rule/SalvageEntityWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/AlignmentHorizontal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/AlignmentVertical.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/Focusable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/IterationItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/LogHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/ObjectProducer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/SizeConstraint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/TextStyle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponentFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponentParentFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponent_Base.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponent_Button.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponent_Checkbox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponent_Column.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponent_Label.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponent_ListInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponent_ListSelect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponent_ListSelection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponent_Parent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponent_Row.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponent_Scrollpane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponent_Spacer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponent_Sprite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIComponent_TextField.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIValueHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIValueHandler_Property.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIValueHandler_PropertyTextField.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/ui/UIValueValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/util/UtilItems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssms/qol/util/UtilTrade.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "katemonster33"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:katemonster33/SSMSQoLEx.git",
+    "accountId": "24b13924-04df-44d4-a9aa-be6e41910566"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2vJiY5HJyIMxREV9zDIBTk7EMUr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Run Starsector.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/katie/starsector",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.20665084"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ssms/qol" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Run Starsector" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../starsector/jre_linux" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.fs.starfarer.StarfarerLauncher" />
+      <module name="SSMSQoLEx" />
+      <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8 -noverify -XX:+UnlockDiagnosticVMOptions -XX:+UnlockExperimentalVMOptions -XX:+ShowCodeDetailsInExceptionMessages -XX:+ExtensiveErrorReports -XX:+ShowMessageBoxOnError -XX:+PrintCommandLineFlags -XX:+TieredCompilation -XX:-UseCondCardMark -Xlog:async -XX:+UseFastStosb -XX:+AlwaysCompileLoopMethods -XX:TieredStopAtLevel=4 -XX:TrimNativeHeapInterval=60000 -XX:+UseCriticalCompilerThreadPriority -XX:+UseCriticalJavaThreadPriority -XX:UseAVX=3 -XX:AVX3Threshold=0 -XX:UseSSE=4 -XX:+UseSSE42Intrinsics -XX:+UseCompressedOops -XX:+UseCompressedClassPointers -XX:+UseFMA -XX:+UseBMI1Instructions -XX:+UseBMI2Instructions -XX:+UseCLMUL -XX:+UseFastUnorderedTimeStamps -XX:+UseUnalignedLoadStores -XX:+UseXMMForArrayCopy -XX:+UseXMMForObjInit -XX:+UseXmmI2D -XX:+UseXmmI2F -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:+ParallelRefProcEnabled -XX:+UseShenandoahGC -XX:ShenandoahGCMode=iu -XX:ShenandoahGCHeuristics=compact -XX:ShenandoahAllocationThreshold=85 -XX:ShenandoahGuaranteedGCInterval=0 -XX:+ZeroTLAB -XX:+SegmentedCodeCache -XX:+AlwaysAtomicAccesses -XX:+UseStringDeduplication -XX:-DontCompileHugeMethods -XX:Tier0Delay=1 -XX:+UseFPUForSpilling -XX:+EnableVectorAggressiveReboxing -XX:+EnableVectorReboxing -XX:+EnableVectorSupport -XX:-AlignVector -XX:TieredOldPercentage=10000 -XX:Tier0ProfilingStartPercentage=2000 -XX:IncreaseFirstTierCompileThresholdAt=99 -XX:InterpreterProfilePercentage=99 -XX:+UseVectorCmov -XX:+UseVectorStubs -XX:ReferencesPerThread=0 -XX:MaxGCPauseMillis=10 -XX:-EnableThreadSMRStatistics -XX:+UseUnalignedAccesses -XX:PerMethodRecompilationCutoff=100000 -XX:ProfileMaturityPercentage=100 -XX:NmethodSweepActivity=1 -XX:ThreadPriorityPolicy=1 -XX:ReservedCodeCacheSize=256m -XX:+PrintCodeCache -XX:-UseDynamicNumberOfCompilerThreads -XX:CompilerDirectivesFile=./compiler_directives.txt -Djava.library.path=./native/linux -XX:-BytecodeVerificationLocal -XX:-BytecodeVerificationRemote -Djava.util.Arrays.useLegacyMergeSort=true --enable-preview --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.nio.Buffer.UNSAFE=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.locks=ALL-UNNAMED --add-opens=java.base/jdk.internal.ref=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.lang.ref=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.desktop/java.awt.font=ALL-UNNAMED --add-opens=java.desktop/java.awt.Rectangle=ALL-UNNAMED --add-opens=java.desktop/java.awt=ALL-UNNAMED --add-exports=java.base/jdk.internal.ref=ALL-UNNAMED --add-exports=java.base/jdk.internal.misc=ALL-UNNAMED --add-exports=java.base/sun.nio.ch=ALL-UNNAMED -Xms2048m -Xmx2048m -Xss4m -Dcom.fs.starfarer.settings.paths.saves=./saves -Dcom.fs.starfarer.settings.paths.screenshots=./screenshots -Dcom.fs.starfarer.settings.paths.mods=./mods -Dcom.fs.starfarer.settings.paths.logs=. -Dcom.fs.starfarer.settings.linux=true " />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../starsector" />
+      <method v="2">
+        <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_CopySSMSQoLEx" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SSMSQoLEx:jar" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63bb2b04-433e-49e9-8efd-aad06df0f95a" name="Changes" comment="" />
+      <created>1743869621617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743869621617</updated>
+    </task>
+    <servers />
+  </component>
+</project>

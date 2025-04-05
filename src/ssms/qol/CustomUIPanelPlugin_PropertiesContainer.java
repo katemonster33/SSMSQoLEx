@@ -80,17 +80,17 @@ public class CustomUIPanelPlugin_PropertiesContainer<K> implements CustomUIPanel
     }
     
     protected static class Breadcrumb {
-        PropertyConfiguration propertyConfiguration;
+        PropertyConfiguration<?, ?> propertyConfiguration;
         String propertyFieldId;
-        PropertiesContainer container, propertyContainer;
+        PropertiesContainer<?> container, propertyContainer;
 
-        public Breadcrumb(PropertyConfiguration configuration, String fieldId, PropertiesContainer container) {
+        public Breadcrumb(PropertyConfiguration<?, ?> configuration, String fieldId, PropertiesContainer<?> container) {
             this.propertyConfiguration = configuration;
             this.propertyFieldId = fieldId;
             this.propertyContainer = container;
         }
         
-        public Breadcrumb(PropertiesContainer container) {
+        public Breadcrumb(PropertiesContainer<?> container) {
             this.container = container;
         }
     }
@@ -492,7 +492,8 @@ public class CustomUIPanelPlugin_PropertiesContainer<K> implements CustomUIPanel
         
         StandardTooltipV2Expandable tooltip = UIUtil.getInstance().getTooltip();
         if ( tooltip != null ) {
-            UtilObfuscation.ProcessInput(tooltip, events);
+            //UtilObfuscation.ProcessInput(tooltip, events);
+            tooltip.processInput(events);
         }
     }
 }

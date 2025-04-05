@@ -1,11 +1,11 @@
 {
-    "id": "SSMSQoL",
-    "name": "10 SSMS QoL",
-    "author": "Malte Schulze",
-    "version": "1.5",
+    "id": "SSMSQoLEx",
+    "name": "SSMS QoL EX",
+    "author": "Katie McKean",
+    "version": "1.0",
     "utility": "true",
     "description": "Various UI and gameplay enhancements.",
-    "gameVersion": "0.97a-RC11",
-	"jars":["jars/SSMSQoL.jar"],
+    "gameVersion": "0.98a-RC5",
+	"jars":["jars/SSMSQoLEx.jar"],
 	"modPlugin":"ssms.qol.ModPlugin"
 }
